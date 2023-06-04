@@ -1,0 +1,18 @@
+body{
+    overflow-x: hidden;
+}
+
+.main{
+    min-height: 1024px;
+    padding-top: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    max-width: 1270px;
+    padding: 15px;
+    margin: 0 auto;
+}

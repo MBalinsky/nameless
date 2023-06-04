@@ -1,0 +1,15 @@
+.header__icon{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &-bar{
+        display: block;
+        width: 100px;
+        height: 10px;
+        background-color: $burgerLine-bg;
+        border-radius: 50px;
+    }
+}

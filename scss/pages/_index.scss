@@ -1,0 +1,42 @@
+.section-main{
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        min-height: 750px;
+        img{
+            height: 101px;
+            width: 65px;
+        }
+        h2{
+            font-family: $nikoleta-fonts;
+            position: relative;
+            font-size: 40px;
+            line-height: 41px;
+            letter-spacing: 0.2em;
+            color: $white;
+            padding-bottom: 20px;
+            &::before{
+                content: "";
+                position: absolute;
+                right: -55px;
+                top: -350px;
+                width: 253px;
+                height: 305px;
+                background-image: url('../../assets/images/svg/spray-top.svg');
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                left: -55px;
+                top: 190px;
+                width: 366px;
+                height: 276px;
+                background-image: url('../../assets/images/svg/spray-bottom.svg');
+            }
+        }
+    }
+}
+
