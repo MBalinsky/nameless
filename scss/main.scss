@@ -1,5 +1,6 @@
 // base
 @import './base/reset';
+@import './base/base';
 
 //abstracts
 
@@ -12,6 +13,8 @@
 
 @import './layout/header';
 @import './layout/nav-icon';
+@import './layout/phone-btn';
+@import './layout/footer';
 
 //pages
 @import './pages/index';

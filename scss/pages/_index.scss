@@ -5,7 +5,7 @@
         align-items: center;
         text-align: center;
         justify-content: center;
-        min-height: 750px;
+        min-height: 1024px;
         img{
             height: 101px;
             width: 65px;
@@ -18,25 +18,81 @@
             letter-spacing: 0.2em;
             color: $white;
             padding-bottom: 20px;
-            &::before{
+        }
+        .section-main__title-decor-top::before{
                 content: "";
                 position: absolute;
                 right: -55px;
                 top: -350px;
                 width: 253px;
                 height: 305px;
-                background-image: url('../../assets/images/svg/spray-top.svg');
+                background-image: url('../../assets/images/spray-top.png');
+                @include backgroundImageSnipet;
             }
-            &::after{
+        .section-main__title-decor-bottom::after{
                 content: "";
                 position: absolute;
                 left: -55px;
-                top: 190px;
+                top: 270px;
                 width: 366px;
                 height: 276px;
-                background-image: url('../../assets/images/svg/spray-bottom.svg');
+                background-image: url('../../assets/images/spray-bottom.png');
+                @include backgroundImageSnipet;
             }
-        }
     }
 }
 
+.briefly-about{
+    padding: 50px 0 60px;
+    position: relative;
+    &__title{
+        position: relative;
+        padding-bottom: 116px;
+        z-index: 5;
+        line-height: 41px;
+        margin-top: 50px;
+        margin-left: 83px;
+        &::before{
+            content: "";
+            position: absolute;
+            left: -87px;
+            top: -42px;
+            z-index: -1;
+            width: 500px;
+            height: 143px;
+            background-image: url('../../assets/images/image-back.png');
+            @include backgroundImageSnipet;
+        }
+    }
+    &__text{
+        line-height: 60px;
+        letter-spacing: 0.15em;
+        position: relative;
+        padding-bottom: 259px;
+    }
+    .phone-btn{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    &__text-decor-top::before{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -190px;
+        width: 162px;
+        height: 178px;
+        background-image: url('../../assets/images/briefly-about-decor-top.png');
+        @include backgroundImageSnipet;
+    }
+    &__text-decor-bottom::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 25px;
+        width: 265px;
+        height: 234px;
+        background-image: url('../../assets/images/briefly-about-decor-bottom.png');
+        @include backgroundImageSnipet;
+    }
+}

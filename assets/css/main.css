@@ -87,13 +87,28 @@ legend {
   display: block;
 }
 
+.visually-hidden {
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 body {
   overflow-x: hidden;
+  color: #fff;
+  font-family: "Nikoleta";
+  font-size: 40px;
 }
 
 .main {
   min-height: 1024px;
-  padding-top: 100px;
+  padding-top: 112px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,13 +156,41 @@ body {
   border-radius: 50px;
 }
 
+.sticky {
+  position: fixed;
+  z-index: 10;
+  margin-right: -598px;
+  position: fixed;
+  right: 50%;
+  bottom: 89px;
+  cursor: pointer;
+}
+
+.stop {
+  position: absolute;
+  z-index: 10;
+  margin-right: -598px;
+  position: fixed;
+  right: 50%;
+  bottom: 89px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #000000;
+  padding: 48px 0 48px;
+}
+.footer__text {
+  font-family: "Caveat";
+}
+
 .section-main__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
-  min-height: 750px;
+  min-height: 1024px;
 }
 .section-main__content img {
   height: 101px;
@@ -162,21 +205,88 @@ body {
   color: #fff;
   padding-bottom: 20px;
 }
-.section-main__content h2::before {
+.section-main__content .section-main__title-decor-top::before {
   content: "";
   position: absolute;
   right: -55px;
   top: -350px;
   width: 253px;
   height: 305px;
-  background-image: url("../../assets/images/svg/spray-top.svg");
+  background-image: url("../../assets/images/spray-top.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.section-main__content h2::after {
+.section-main__content .section-main__title-decor-bottom::after {
   content: "";
   position: absolute;
   left: -55px;
-  top: 190px;
+  top: 270px;
   width: 366px;
   height: 276px;
-  background-image: url("../../assets/images/svg/spray-bottom.svg");
+  background-image: url("../../assets/images/spray-bottom.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.briefly-about {
+  padding: 50px 0 60px;
+  position: relative;
+}
+.briefly-about__title {
+  position: relative;
+  padding-bottom: 116px;
+  z-index: 5;
+  line-height: 41px;
+  margin-top: 50px;
+  margin-left: 83px;
+}
+.briefly-about__title::before {
+  content: "";
+  position: absolute;
+  left: -87px;
+  top: -42px;
+  z-index: -1;
+  width: 500px;
+  height: 143px;
+  background-image: url("../../assets/images/image-back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.briefly-about__text {
+  line-height: 60px;
+  letter-spacing: 0.15em;
+  position: relative;
+  padding-bottom: 259px;
+}
+.briefly-about .phone-btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.briefly-about__text-decor-top::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -190px;
+  width: 162px;
+  height: 178px;
+  background-image: url("../../assets/images/briefly-about-decor-top.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.briefly-about__text-decor-bottom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  width: 265px;
+  height: 234px;
+  background-image: url("../../assets/images/briefly-about-decor-bottom.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */
