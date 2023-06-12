@@ -1,0 +1,80 @@
+.header__menu{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    text-align: center;
+    &-link{
+        font-family: $nikoleta-fonts;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0.2em;
+        color: $white;
+    }
+    &-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 350px;
+        height: 50px;
+        background-color: $black;
+    }
+    &-item + &-item{
+        margin-top: 148px;
+    }
+}
+.menu-part{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 10px 5px 10px 10px;
+    border-style: solid;
+    border-color: $black;
+    width: 50%;
+    background-color: $burger-bg;
+    transition: all .4s ease-in;
+}
+
+.right-part{
+    right: -150%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.left-part{
+    left: -150%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.open.right-part{
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.open.left-part{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.logo-burger{
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.logo-left-part{
+    right: -14.5px;
+}
+
+
+.logo-right-part{
+    left: -0.5px;
+}
+
