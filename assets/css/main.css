@@ -108,6 +108,10 @@ html {
   overflow-x: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 body {
   color: #fff;
   font-family: "Nikoleta";

@@ -12,6 +12,7 @@ function openBurger() {
     setTimeout(() => { 
         btnClose.classList.add('header__btn-close--active')
      }, 300);
+     document.body.classList.add('no-scroll');
 }
 
 function closeBurger(){
@@ -19,6 +20,7 @@ function closeBurger(){
         el.classList.remove('open');
     })
     btnClose.classList.remove('header__btn-close--active');
+    document.body.classList.remove('no-scroll');
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * * * *//
