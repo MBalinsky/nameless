@@ -11,14 +11,14 @@ function openBurger() {
     })
     setTimeout(() => { 
         btnClose.classList.add('header__btn-close--active')
-     }, 500);
+     }, 300);
 }
 
 function closeBurger(){
     menuParts.forEach(el => {
         el.classList.remove('open');
     })
-    btnClose.classList.remove('header__btn-close--active')
+    btnClose.classList.remove('header__btn-close--active');
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * * * *//
