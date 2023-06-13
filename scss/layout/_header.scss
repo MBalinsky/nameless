@@ -16,10 +16,10 @@
         cursor: pointer;
         justify-content: center;
         align-items: center;
-        width: 100px;
-        height: 100px;
+        width: 65px;
+        height: 65px;
         border-radius: 50%;
-        border: 5px solid #FFFFFF;
+        border: 2.5px solid #FFFFFF;
         img{
             animation: headerIconAnimation 3s infinite;
         }
@@ -45,5 +45,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 5px 0;
     }
 }

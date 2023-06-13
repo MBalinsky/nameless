@@ -1,8 +1,7 @@
 .header__icon{
     position: relative;
-    z-index: 50;
-    width: 100px;
-    height: 50px;
+    width: 60px;
+    height: 23px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,8 +9,8 @@
     transition: all .3s ease-in-out;
     &-bar{
         display: block;
-        width: 100px;
-        height: 10px;
+        width: 60px;
+        height: 3px;
         background-color: $white;
         border-radius: 50px;
     }

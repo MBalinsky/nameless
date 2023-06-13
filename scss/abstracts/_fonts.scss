@@ -8,10 +8,19 @@
 }
 
 @font-face { 
-    font-family: "Caveat";
-    src: url('../../assets/fonts/Caveat-Regular.woff2') format("woff2"), 
-         url('../../assets/fonts/Caveat-Regular.woff') format("woff"), 
-         url('../../assets/fonts/Caveat-Regular.ttf') format("truetype");
+    font-family: "Nobile";
+    src: url('../../assets/fonts/AnyConv.com__Nobile-Regular.woff2') format("woff2"), 
+         url('../../assets/fonts/Nobile-Regular.woff') format("woff"), 
+         url('../../assets/fonts/Nobile-Regular.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: "CherryBomb";
+    src: url('../../assets/fonts/CherryBomb-Regular.woff2') format("woff2"), 
+         url('../../assets/fonts/CherryBomb-Regular.woff') format("woff"), 
+         url('../../assets/fonts/CherryBomb-Regular.ttf') format("truetype");
     font-weight: 400;
     font-style: normal;
 }

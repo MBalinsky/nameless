@@ -1,8 +1,12 @@
 .footer{
     background-color: $black;
     padding: 48px 0 48px;
-    font-size: 40px;
+    font-size: 25px;
     &__text{
-        font-family: $caveat-fonts;
+        font-family: $nobile-fonts;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
     }
 }
