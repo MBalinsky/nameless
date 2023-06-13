@@ -11,7 +11,7 @@ function openBurger() {
     })
     setTimeout(() => { 
         btnClose.classList.add('header__btn-close--active')
-     }, 1000);
+     }, 500);
 }
 
 function closeBurger(){
