@@ -22,5 +22,4 @@ function closeBurger(){
     btnClose.classList.remove('header__btn-close--active');
     document.body.classList.remove('no-scroll');
 }
-
 //* * * * * * * * * * * * * * * * * * * * * * * * * *//

@@ -119,11 +119,6 @@ body {
 }
 
 .main {
-  padding-top: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   flex-grow: 1;
 }
 
@@ -137,6 +132,10 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.text-turquoise {
+  color: #57BEE4;
 }
 
 @font-face {
@@ -163,12 +162,8 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  border-bottom: 3px solid #fff;
-  transition: -webkit-backdrop-filter 0.4s ease;
-  transition: backdrop-filter 0.4s ease;
-  transition: backdrop-filter 0.4s ease, -webkit-backdrop-filter 0.4s ease;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  border-bottom: 3px solid #57BEE4;
+  background-color: #000000;
 }
 .header__information {
   display: flex;
@@ -182,7 +177,7 @@ body {
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  border: 2.5px solid #FFFFFF;
+  border: 2.5px solid #57BEE4;
 }
 .header__circle img {
   -webkit-animation: headerIconAnimation 3s infinite;
@@ -232,7 +227,7 @@ body {
 .header__icon {
   position: relative;
   width: 60px;
-  height: 23px;
+  height: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,9 +237,13 @@ body {
 .header__icon-bar {
   display: block;
   width: 60px;
-  height: 3px;
+  height: 5px;
+  transform: rotate(-10deg);
   background-color: #fff;
   border-radius: 50px;
+}
+.header__icon-bar:nth-child(2) {
+  background-color: #57BEE4;
 }
 .header__icon--active .header__icon-bar:nth-child(1) {
   transform: translateY(36px) rotate(-49deg);
@@ -387,7 +386,16 @@ body {
 }
 
 .section-main {
-  min-height: 800px;
+  min-height: 735px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section-main__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 15px);
 }
 .section-main__content {
   display: flex;
@@ -395,44 +403,17 @@ body {
   align-items: center;
   text-align: center;
   justify-content: center;
-  min-height: 1024px;
-}
-.section-main__content img {
-  height: 101px;
-  width: 65px;
+  min-height: 800px;
 }
 .section-main__content h2 {
   font-family: "Nikoleta";
+  max-width: 730px;
   position: relative;
   font-size: 40px;
-  line-height: 41px;
+  line-height: 60px;
   letter-spacing: 0.2em;
   color: #fff;
   padding-bottom: 20px;
-}
-.section-main__content .section-main__title-decor-top::before {
-  content: "";
-  position: absolute;
-  right: -55px;
-  top: -350px;
-  width: 253px;
-  height: 305px;
-  background-image: url("../../assets/images/spray-top.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.section-main__content .section-main__title-decor-bottom::after {
-  content: "";
-  position: absolute;
-  left: -55px;
-  top: 270px;
-  width: 366px;
-  height: 276px;
-  background-image: url("../../assets/images/spray-bottom.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .briefly-about {
@@ -449,19 +430,6 @@ body {
   margin-top: 50px;
   margin-left: 15px;
 }
-.briefly-about__title::before {
-  content: "";
-  position: absolute;
-  left: -26px;
-  top: -30px;
-  z-index: -1;
-  width: 660px;
-  height: 108px;
-  background-image: url("../../assets/images/image-back.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 .briefly-about__text {
   line-height: 60px;
   letter-spacing: 0.15em;
@@ -473,28 +441,4 @@ body {
   position: fixed;
   bottom: 0;
   right: 0;
-}
-.briefly-about__text-decor-top::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: -190px;
-  width: 162px;
-  height: 178px;
-  background-image: url("../../assets/images/briefly-about-decor-top.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.briefly-about__text-decor-bottom::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 25px;
-  width: 265px;
-  height: 234px;
-  background-image: url("../../assets/images/briefly-about-decor-bottom.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }/*# sourceMappingURL=main.css.map */
